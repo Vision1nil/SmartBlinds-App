@@ -10,10 +10,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_hello"
-        android:text="Hello World"
+        android:id="@+id/tv_control_blinds_title"
+        android:text="Control Blinds"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100sp"
-        android:textSize="20dp" />
+        android:layout_marginTop="30sp"
+        android:textSize="30sp" />
 
   </RelativeLayout>
