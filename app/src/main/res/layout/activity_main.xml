@@ -17,10 +17,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30sp"
             android:text="Energy Management App"
-            android:textSize="30sp">
+            android:textSize="40sp"
+            android:fontFamily="@font/oswald"
+            >
 
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33sp"
+            android:text="\nBy: Seattle Solvers"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            >
 
         </TextView>
 
