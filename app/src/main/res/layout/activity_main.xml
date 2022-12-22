@@ -14,6 +14,7 @@
         tools:context=".MainActivity">
 
         <TextView
+            android:id="@+id/tv_energy_management_app_title"
             android:layout_marginTop="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,15 +24,16 @@
             android:fontFamily="@font/oswald"
             >
 
-
         </TextView>
         <TextView
+            android:id="@+id/tv_energy_management_app_creators"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80sp"
+            android:layout_marginTop="85sp"
             android:text="By: Seattle Solvers"
             android:layout_centerHorizontal="true"
             android:textSize="20sp"
+            android:fontFamily="@font/oswald"
             >
 
         </TextView>
