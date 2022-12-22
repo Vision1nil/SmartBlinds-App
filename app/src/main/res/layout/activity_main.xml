@@ -13,17 +13,15 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
         <TextView
+            android:id="tv_yellow_banner_dashboard"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:background="@drawable/top_banner"
-
-
             >
-
         </TextView>
 
         <TextView
-            android:id="@+id/tv_energy_management_app_title"
+            android:id="@+id/tv_dashboard_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -37,7 +35,7 @@
 
 
         <Button
-            android:id="@+id/btn_click_me"
+            android:id="@+id/btn_control_blinds"
             android:layout_width="281dp"
             android:layout_height="64dp"
             android:layout_centerHorizontal="true"
@@ -51,14 +49,14 @@
         </Button>
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/iv_logo_dashboard"
             android:layout_alignParentRight="true"
             android:layout_width="85sp"
             android:layout_height="85sp"
             app:srcCompat="@drawable/solvers_banner" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/iv_up_arrow_target_temp"
             android:layout_width="75sp"
             android:layout_height="75sp"
             android:layout_centerHorizontal="true"
