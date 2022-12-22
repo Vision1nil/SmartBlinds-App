@@ -12,30 +12,58 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
-
         <TextView
-            android:id="@+id/tv_energy_management_app_title"
-            android:layout_marginTop="30sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text="Dashboard"
-            android:textSize="40sp"
-            android:fontFamily="@font/oswald"
-            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/top_banner"
+
+
             >
 
         </TextView>
 
-        <Button
-            android:id="@+id/btn_click_me"
+        <TextView
+            android:id="@+id/tv_energy_management_app_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginVertical="600sp"
+            android:layout_marginTop="15sp"
+            android:fontFamily="@font/oswald"
+            android:text="Dashboard"
+            android:textColor="@color/black"
+            android:textSize="40sp">
+
+        </TextView>
+
+
+        <Button
+            android:id="@+id/btn_click_me"
+            android:layout_width="281dp"
+            android:layout_height="64dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginVertical="110sp"
             android:backgroundTint="@color/solver_yellow"
-            android:text="Blind Settings"
-            android:textColor="@color/black"></Button>
+            android:text="Control Blinds"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/oswald">
+
+        </Button>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_alignParentRight="true"
+            android:layout_width="85sp"
+            android:layout_height="85sp"
+            app:srcCompat="@drawable/solvers_banner" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="75sp"
+            android:layout_height="75sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200sp"
+            app:srcCompat="@drawable/increase_temp" />
 
         <!--            app:layout_constraintBottom_toBottomOf="parent"-->
         <!--            app:layout_constraintEnd_toEndOf="parent"-->
