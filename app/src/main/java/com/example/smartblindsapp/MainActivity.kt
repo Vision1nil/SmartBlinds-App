@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     // with "ActivityNameBinding" or "FragmentNameBinding"
     private lateinit var binding: ActivityMainBinding
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -25,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(mainView)
 
         // when btn is clicked, load to the control activity.
-        binding.btnClickMe.setOnClickListener {
+        binding.btnControlBlinds.setOnClickListener {
             startActivity(Intent(this@MainActivity, ControlActivity::class.java))
             finish()
         }

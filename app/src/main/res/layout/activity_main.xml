@@ -12,12 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
+
         <TextView
-            android:id="tv_yellow_banner_dashboard"
+            android:id="@+id/tv_banner_dashboard"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@drawable/top_banner"
-            >
+            android:background="@drawable/top_banner">
+
         </TextView>
 
         <TextView
@@ -57,16 +58,76 @@
 
         <ImageView
             android:id="@+id/iv_up_arrow_target_temp"
-            android:layout_width="75sp"
-            android:layout_height="75sp"
+            android:layout_width="85sp"
+            android:layout_height="85sp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="200sp"
+            android:layout_marginTop="250sp"
             app:srcCompat="@drawable/increase_temp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="185sp"
+            android:text="Target Temperature "
+            android:fontFamily="@font/oswald"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:textColor="@color/black"
 
-        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
-        <!--            app:layout_constraintEnd_toEndOf="parent"-->
-        <!--            app:layout_constraintTop_toTopOf="parent"-->
-        <!--            app:layout_constraint_toBottomOf="parent" />-->
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/target_temp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="337sp"
+            android:text="filler for now"
+            android:textSize="30sp"
+            android:fontFamily="@font/oswald"
+            android:textColor="@color/black"
+
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/current_temp_background"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/top_banner">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/current_temp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="530sp"
+            android:text="filler for now"
+            android:textSize="30sp"
+            android:fontFamily="@font/oswald"
+            android:textColor="@color/black"
+
+            >
+
+        </TextView>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="85sp"
+            android:layout_height="85sp"
+            android:layout_centerHorizontal="true"
+
+
+            android:layout_marginStart="400sp"
+            android:layout_marginTop="400sp"
+            android:layout_marginEnd="400sp"
+            android:layout_marginBottom="400sp"
+            app:srcCompat="@drawable/decrease_temp" />
+
+
 
     </RelativeLayout>
 </FrameLayout>

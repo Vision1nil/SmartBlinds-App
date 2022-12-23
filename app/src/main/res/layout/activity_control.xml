@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
         <TextView
-            android:id="tv_yellow_banner_control"
+            android:id="tv_control_banner"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:background="@drawable/top_banner"
