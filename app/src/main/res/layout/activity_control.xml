@@ -5,21 +5,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    >
-
+    tools:context=".MainActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
         <TextView
-            android:id="tv_control_banner"
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:background="@drawable/top_banner"
-            >
+            android:background="@drawable/top_banner">
         </TextView>
-
+        <TextView
+            android:id="@+id/current_temp_background"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/top_banner">
+        </TextView>
         <TextView
             android:id="@+id/control_screen_title"
             android:layout_marginTop="15sp"
@@ -29,29 +31,68 @@
             android:text="Control"
             android:textSize="40sp"
             android:fontFamily="@font/oswald"
-            android:textColor="@color/black"
-            >
-
+            android:textColor="@color/black">
         </TextView>
-
-        <Button
-            android:id="@+id/btn_mode_changer"
+        <TextView
+            android:id="@+id/tilit_title"
+            android:layout_marginTop="120sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="200sp"
-            android:layout_marginTop="600sp"
-            android:backgroundTint="@color/solver_yellow"
-            android:text="Enable\nautomated \nmode"
+            android:layout_centerHorizontal="true"
+            android:text="Tilt"
+            android:textSize="30sp"
+            android:fontFamily="@font/oswald"
+            android:textColor="@color/black">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="515sp"
+            android:layout_marginLeft="100sp"
+            android:fontFamily="@font/oswald"
+            android:text="Mode: Manual"
             android:textColor="@color/black"
-            android:textSize="20sp"
-            >
+            android:textSize="40sp">
+        </TextView>
+        <Button
+            android:id="@+id/enable_automated_tilt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90sp"
+            android:layout_marginTop="400sp"
+            android:backgroundTint="@color/solver_yellow"
+            android:text="Enable\n automated tilt"
+            android:textColor="@color/black"
+            android:textSize="20sp">
         </Button>
-
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="85sp"
+            android:layout_height="85sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="800sp"
+            android:layout_marginTop="310sp"
+            android:layout_marginEnd="400sp"
+            android:layout_marginBottom="400sp"
+            app:srcCompat="@drawable/decrease_temp" />
+        <ImageView
+            android:id="@+id/iv_up_arrow_target_temp"
+            android:layout_width="85sp"
+            android:layout_height="85sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="165sp"
+            app:srcCompat="@drawable/increase_temp" />
+        <Button
+            android:id="@+id/open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160sp"
+            android:layout_marginTop="255sp"
+            android:backgroundTint="@color/solver_yellow"
+            android:text="Open"
+            android:textColor="@color/black"
+            android:fontFamily="@font/oswald"
+            android:textSize="20sp">
+        </Button>
     </RelativeLayout>
 </FrameLayout>
-
-
-
-
-
-

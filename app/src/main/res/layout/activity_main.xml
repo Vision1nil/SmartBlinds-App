@@ -76,18 +76,21 @@
             >
 
         </TextView>
+
         <TextView
+            android:id="@+id/target_temp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/target_temp"
             android:layout_centerHorizontal="true"
-            android:layout_margin="337sp"
-            android:text="filler for now"
-            android:textSize="30sp"
-            android:fontFamily="@font/oswald"
-            android:textColor="@color/black"
+            android:layout_marginStart="337sp"
+            android:layout_marginTop="337sp"
+            android:layout_marginEnd="337sp"
+            android:layout_marginBottom="337sp"
 
-            >
+            android:fontFamily="@font/oswald"
+            android:text="filler for now"
+            android:textColor="@color/black"
+            android:textSize="30sp">
 
         </TextView>
         <TextView
