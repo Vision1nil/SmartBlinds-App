@@ -6,56 +6,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:background="@drawable/top_banner">
+
         </TextView>
+
         <TextView
             android:id="@+id/current_temp_background"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_alignParentBottom="true"
             android:background="@drawable/top_banner">
+
         </TextView>
+
         <TextView
             android:id="@+id/control_screen_title"
-            android:layout_marginTop="15sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Control"
-            android:textSize="40sp"
+            android:layout_marginTop="15sp"
             android:fontFamily="@font/oswald"
-            android:textColor="@color/black">
-        </TextView>
+            android:text="Control"
+            android:textColor="@color/black"
+            android:textSize="40sp" />
+
+
         <TextView
             android:id="@+id/tilit_title"
-            android:layout_marginTop="120sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="Tilt"
-            android:textSize="30sp"
+            android:layout_marginTop="120sp"
             android:fontFamily="@font/oswald"
-            android:textColor="@color/black">
+            android:text="Tilt"
+            android:textColor="@color/black"
+            android:textSize="30sp">
+
         </TextView>
+
         <TextView
+            android:id="@+id/tv_manual_or_automatic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="515sp"
             android:layout_marginLeft="100sp"
+            android:layout_marginTop="515sp"
             android:fontFamily="@font/oswald"
             android:text="Mode: Manual"
             android:textColor="@color/black"
             android:textSize="40sp">
+
         </TextView>
+
         <Button
-            android:id="@+id/enable_automated_tilt"
+            android:id="@+id/btn_enable_automated_or_manual_tilt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="90sp"
@@ -64,9 +76,21 @@
             android:text="Enable\n automated tilt"
             android:textColor="@color/black"
             android:textSize="20sp">
+
         </Button>
-        <ImageView
-            android:id="@+id/imageView"
+
+        <ImageButton
+            android:id="@+id/ib_tilt_up"
+            android:layout_width="85sp"
+            android:layout_height="85sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="165sp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/increase_temp" />
+
+        <ImageButton
+            android:id="@+id/ib_tilt_down"
             android:layout_width="85sp"
             android:layout_height="85sp"
             android:layout_centerHorizontal="true"
@@ -74,25 +98,23 @@
             android:layout_marginTop="310sp"
             android:layout_marginEnd="400sp"
             android:layout_marginBottom="400sp"
-            app:srcCompat="@drawable/decrease_temp" />
-        <ImageView
-            android:id="@+id/iv_up_arrow_target_temp"
-            android:layout_width="85sp"
-            android:layout_height="85sp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="165sp"
-            app:srcCompat="@drawable/increase_temp" />
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/decrease_temp" />
+
+
         <Button
-            android:id="@+id/open"
+            android:id="@+id/btn_open_or_close"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="160sp"
             android:layout_marginTop="255sp"
             android:backgroundTint="@color/solver_yellow"
+            android:fontFamily="@font/oswald"
             android:text="Open"
             android:textColor="@color/black"
-            android:fontFamily="@font/oswald"
             android:textSize="20sp">
+
         </Button>
     </RelativeLayout>
 </FrameLayout>

@@ -30,8 +30,25 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity, ControlActivity::class.java))
             finish()
         }
+        binding.ibTargetTempUp.setOnClickListener{
+            increaseTemp();
+        }
+        binding.ibTargetTempDown.setOnClickListener{
+            decreaseTemp();
+        }
 
 
+
+    }
+
+    private fun decreaseTemp() {
+        val targetTemp = binding.tvTargetTemp.text.substring(0,2).toInt()-1
+        binding.tvTargetTemp.text = "$targetTemp ° F"
+    }
+
+    private fun increaseTemp() {
+        val targetTemp = binding.tvTargetTemp.text.substring(0,2).toInt()+1
+        binding.tvTargetTemp.text = "$targetTemp ° F"
     }
 
 

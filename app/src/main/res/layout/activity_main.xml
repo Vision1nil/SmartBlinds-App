@@ -57,19 +57,22 @@
             android:layout_height="85sp"
             app:srcCompat="@drawable/solvers_banner" />
 
-        <ImageView
-            android:id="@+id/iv_up_arrow_target_temp"
+        <ImageButton
+            android:id="@+id/ib_target_temp_up"
             android:layout_width="85sp"
             android:layout_height="85sp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="250sp"
-            app:srcCompat="@drawable/increase_temp" />
+            android:backgroundTint="#0000FFFF"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/increase_temp"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
         <TextView
             android:id="@+id/target_temp_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="185sp"
-            android:text="Target Temperature "
+            android:text="Target Indoor Temperature "
             android:fontFamily="@font/oswald"
             android:layout_centerHorizontal="true"
             android:textSize="30sp"
@@ -78,17 +81,16 @@
         </TextView>
 
         <TextView
-            android:id="@+id/target_temp"
+            android:id="@+id/tv_target_temp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginStart="337sp"
-            android:layout_marginTop="337sp"
+            android:layout_marginTop="342sp"
             android:layout_marginEnd="337sp"
             android:layout_marginBottom="337sp"
-
             android:fontFamily="@font/oswald"
-            android:text="filler for now"
+            android:text="68° F"
             android:textColor="@color/black"
             android:textSize="30sp">
 
@@ -104,7 +106,7 @@
 
         </TextView>
         <TextView
-            android:id="@+id/current_temp"
+            android:id="@+id/tv_current_temp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -114,25 +116,26 @@
             android:layout_marginBottom="530sp"
 
             android:fontFamily="@font/oswald"
-            android:text="filler for now"
+            android:text="Current Temperature: 68°"
             android:textColor="@color/black"
             android:textSize="30sp">
 
         </TextView>
 
 
-        <ImageView
-            android:id="@+id/imageView"
+        <ImageButton
+            android:id="@+id/ib_target_temp_down"
             android:layout_width="85sp"
             android:layout_height="85sp"
             android:layout_centerHorizontal="true"
-
-
             android:layout_marginStart="400sp"
             android:layout_marginTop="400sp"
             android:layout_marginEnd="400sp"
             android:layout_marginBottom="400sp"
-            app:srcCompat="@drawable/decrease_temp" />
+            android:backgroundTint="#0000FFFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/decrease_temp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
 
 
