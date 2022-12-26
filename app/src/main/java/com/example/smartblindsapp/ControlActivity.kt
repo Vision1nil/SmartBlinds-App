@@ -5,11 +5,11 @@ import android.os.Bundle
 import com.example.smartblindsapp.databinding.ActivityControlBinding
 
 
-
 class ControlActivity : AppCompatActivity() {
     private lateinit var binding: ActivityControlBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityControlBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.btnEnableAutomatedOrManualTilt.setOnClickListener {
             changeModes();
