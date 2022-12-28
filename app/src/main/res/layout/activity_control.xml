@@ -78,12 +78,15 @@
             android:textSize="20sp">
 
         </Button>
-        <ImageView
+        <ImageButton
             android:id="@+id/ib_logo_control"
             android:layout_alignParentRight="true"
             android:layout_width="85sp"
             android:layout_height="85sp"
-            app:srcCompat="@drawable/solvers_banner" />
+            android:src="@drawable/solvers_banner"
+            android:scaleType="centerCrop"
+            android:backgroundTint="#00FFFFFF"
+            />
 
         <ImageButton
             android:id="@+id/ib_tilt_up"

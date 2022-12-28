@@ -1,5 +1,6 @@
 package com.example.smartblindsapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.smartblindsapp.databinding.ActivityControlBinding
@@ -16,6 +17,10 @@ class ControlActivity : AppCompatActivity() {
         }
         binding.btnOpenOrClose.setOnClickListener {
             openClose();
+        }
+        binding.ibLogoControl.setOnClickListener {
+            startActivity(Intent(this@ControlActivity, MainActivity::class.java))
+            finish()
         }
     }
 
