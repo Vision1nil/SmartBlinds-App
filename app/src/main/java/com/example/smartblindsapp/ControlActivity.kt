@@ -22,13 +22,13 @@ class ControlActivity : AppCompatActivity() {
             startActivity(Intent(this@ControlActivity, MainActivity::class.java))
             finish()
         }
-        if //inside temp > target
-            // close blind set to 0
-        else if // inside temp < target
-            if //external temp > internal
+        //if //inside temp > target
+            // close blind set to 0+
+        //else if // inside temp < target
+            //if //external temp > internal
                 //open the blind - set to 90
 
-            else if //external temp < internal
+            //else if //external temp < internal
                 // close the blind set to 0
     }
 
