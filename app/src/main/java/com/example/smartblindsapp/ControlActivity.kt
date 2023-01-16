@@ -3,8 +3,15 @@ package com.example.smartblindsapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.StrictMode
+import android.util.Log
 import com.example.smartblindsapp.databinding.ActivityControlBinding
-
+import org.json.JSONObject
+import java.io.BufferedOutputStream
+import java.io.IOException
+import java.io.OutputStreamWriter
+import java.net.HttpURLConnection
+import java.net.URL
 
 class ControlActivity : AppCompatActivity() {
     private lateinit var binding: ActivityControlBinding
@@ -12,6 +19,10 @@ class ControlActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityControlBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
+        StrictMode.setThreadPolicy(policy)
+
         binding.btnEnableAutomatedOrManualTilt.setOnClickListener {
             changeModes();
         }
@@ -32,19 +43,28 @@ class ControlActivity : AppCompatActivity() {
                 // close the blind set to 0
     }
 
+    private fun postBlindInfo(bondIp: String, blindAction: String) {
+
+        val urlString = "http://$bondIp/v2/devices/944b6fcde5ab645b/actions/$blindAction"
+
+    }
+
     private fun openClose() {
-        if(binding.btnOpenOrClose.text.equals("Open")) {
+        if (binding.btnOpenOrClose.text.equals("Open")) {
             binding.btnOpenOrClose.text = "Close"
-        } else{
+            postBlindInfo("192.168.87.22", "Open")
+        }
+        else {
             binding.btnOpenOrClose.text = "Open"
         }
     }
 
     private fun changeModes() {
-        if(binding.btnEnableAutomatedOrManualTilt.text.equals( "Enable\n automated tilt")) {
+        if (binding.btnEnableAutomatedOrManualTilt.text.equals("Enable\n automated tilt")) {
             binding.btnEnableAutomatedOrManualTilt.text = "Enable\n manual tilt"
             binding.tvManualOrAutomatic.text = "Mode: Automated"
-        } else{
+        }
+        else {
             binding.btnEnableAutomatedOrManualTilt.text="Enable\n automated tilt"
             binding.tvManualOrAutomatic.text = "Mode: Manual"
         }

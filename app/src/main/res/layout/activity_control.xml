@@ -70,7 +70,7 @@
             android:id="@+id/btn_enable_automated_or_manual_tilt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="90sp"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="400sp"
             android:backgroundTint="@color/solver_yellow"
             android:text="Enable\n automated tilt"

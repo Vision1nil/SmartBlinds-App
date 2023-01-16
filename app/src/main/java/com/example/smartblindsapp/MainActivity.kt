@@ -13,13 +13,13 @@ import java.net.URL
 
 class MainActivity : AppCompatActivity() {
 
-    // initializing the binding here. To use in other activty or fragments replace the "ActivityMainBinding"
+    // initializing the binding here. To use in other activity or fragments replace the "ActivityMainBinding"
     // with "ActivityNameBinding" or "FragmentNameBinding"
     private lateinit var binding: ActivityMainBinding
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         // binding.root = the root view (typically the constraint or relative layout of the screen)
